@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family:Cinze sans-serif ;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    
+}
+nav{
+ position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 110px;
+   padding:10px 90px;
+   box-sizing: border-box;
+   background: rgba(0, 0, 0, 0.6);
+   border-bottom: 1px solid #fff;
+   z-index: 1000;
+   }
+
+nav ul{
+    position:absolute;
+    right: 100px; bottom: 30px; 
+    list-style: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+}
+nav ul li a{
+    line-height: 80px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 12px 30px;
+    text-transform: uppercase;
+}
+nav ul li a:hover{
+    background: orangered;
+    border-radius: 6px;
+    color: #fff;
+}
+nav ul input{
+    border-radius: 50px;
+    height: 50px;
+    width: 400px;
+    position: relative;
+    top: 23px;
+    left: 20px;
+}
+.section1{
+    width: 100%;
+    height: 41.1rem;
+    background: url(5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.policy{
+    animation-name: text;
+    animation-duration: 6s;
+    
+}
+@keyframes text{
+    0%{
+        color: red;
+      
+
+    }
+    50%{
+        color: yellow;
+        
+        
+    }
+    100%{
+        color: orangered;
+       
+    }
+}
+.form-container{
+position: relative;
+top:30px; left: 100px;
+background: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3));
+width: 400px;
+box-shadow:7px 7px 7px rgb(0, 0, 0);
+padding: 30px 30px;
+height: 350px;
+}
+.control input{
+    width: 100%;
+ display: block;
+ border: none;
+ text-align: none;
+ margin: 5px;
+}
+.control input[type="submit"]{
+    background-color: orangered;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    opacity: .8;
+    transition: opacity .3s ease;
+
+}
+.control input[type="submit"]:hover{
+    opacity: 1;
+}
+.link{
+    text-align: center;
+}
+.link a{
+    text-decoration: none;
+    color: white;
+    transition: color .3s ease;
+}
+.link a:hover{
+    color: orangered;
+    
+}
+.ui-card{
+    width: 350px;
+    background: radial-gradient(rgb(0, 0, 0) 50%,rgb(0, 0, 0) 100%);
+    overflow: hidden;
+    position: relative;
+}
+.pro{
+    width: 100%;
+    display: block;
+}
+.ui-card img{
+    transform: scale(1.3);
+    transition: all 0.3 ease-out;
+  
+}
+.ui-card:hover img{
+    transform: scale(1);
+    opacity: 0.3;
+}
+.description{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+}
+.description h3{
+    font-weight: 700;
+    font-size: 32px;
+    margin: 0 0  20px;
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all 0.3s ease-out;
+    color: orangered;
+}
+.description p{
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all 0.3s ease-out 0.2;
+
+}
+.description a{
+    color: #fff;
+    background: orangered;
+    display: inline-block;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all 0.3s ease-out 0.4;
+
+}
+.description a:hover{
+    color: #fff;
+    
+}
+
+.ui-card:hover .description h3{
+    transform: translateY(0px);
+    opacity: 1;
+
+}
+.ui-card:hover .description p{
+    opacity: 1;
+    transform: translateY(0px);
+}
+.ui-card:hover .description a{
+    opacity: 1;
+    transform: translateY(0px);
+}
+.product{
+    position: 100%;
+    width: 1000px;
+    min-width: 350px;
+    min-height: 500px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product-img{
+    width: 40%;
+    height: auto;
+    background: #fff;
+    position: relative;
+}
+.product-img img{
+    width: 75%;
+    height: 75%;
+    object-fit: contain;
+    user-select: none;
+    position: relative;
+    left: 75px;
+    
+    padding: 0;
+}
+.product-listing{
+    width: 50%;
+    min-height: 400px;
+    height: 50%;
+    background: #292929;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    color: #eae3d2;
+}
+.tag{
+    position: absolute;
+    top: 5%;
+    left: -1%;
+    transform-origin: left;
+    transform: rotate(-20deg);
+    text-transform: capitalize;
+    color: #eae3d2;
+    padding: 5px 10px;
+    width: 100px;
+    font-size: 18px;
+    text-align: center;
+    background: #292929;
+}
+.name{
+    font-family: 'dosis';
+    font-size: 50px;
+    text-transform: capitalize;
+}
+.info{
+    font-size: 30px;
+    line-height: 30px;
+    margin: 50px 0;
+}
+.price{
+    font-size: 70px;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+.content a{
+  position: relative;
+  left: 550px;
+  bottom: 100px;
+  background: #ff4500;
+  text-decoration: none;
+  color: #eae3d2;
+  font-size: 16px;
+  padding: 10px 20px;
+  transition: .1s;
+  opacity: 0.7;
+  box-shadow: #ffffff 7px  7px 7px;
+  
+}
+.content a:hover{
+    color: #fff;
+    opacity: 1;
+}
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgb(247, 73, 4);
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-button{
+      width: 15px;
+      background: #292929;
+  }
+  .flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    
+    perspective: 1000px; 
+  }
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+   
+  }
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    
+  }
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+    border-radius: 10px;
+  }
+  .flip-card-front .head{
+      background-color: orangered;
+      height: 100px;
+      width: 100%;
+      border-radius: 10px;
+
+  }
+  .flip-card-back {
+    background-color: rgb(77, 72, 72);
+    color: white;
+    transform: rotateY(180deg);
+    border-radius: 10px;
+  }
+  footer{
+      position: relative;
+      width: 100%;
+      background: rgb(212, 74, 24);
+      min-height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  footer .social{
+      padding-bottom: 25px;
+      text-align: center;
+      color: #f1f1f1;
+      list-style: none;
+  }
+
+  footer .social li  {
+      font-size: 25px;
+      color: #fff;
+      margin: 0 10px;
+      transition:  0.5s;
+      align-items: center;
+      position: relative;
+      float: right;
+      position: relative;
+      left: 300px;
+      bottom:20px ;
+      border: #f1f1f1 solid;
+      border-radius: 50%;
+      width: 50px; 
+  }
+  footer .social li:hover {
+      transform: translateY(-10px);
+  }
+  footer  ul a{
+      position: relative;
+      top: 30px;
+     right: 75px;
+      text-decoration: none;
+      color: #eae3d2;
+  }
+  footer  ul a:hover{
+    border-bottom: .1rem solid ;
+    padding-bottom: .5rem;
+      color: #f1f1f1;
+  }
+  footer p{
+    position: relative;
+    top: 70px;
+    right: 20rem;
+  }
